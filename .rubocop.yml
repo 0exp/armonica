@@ -1,0 +1,28 @@
+inherit_gem:
+  armitage-rubocop:
+    - lib/rubocop.general.yml
+    - lib/rubocop.rake.yml
+    - lib/rubocop.rspec.yml
+
+AllCops:
+  TargetRubyVersion: 2.6.5
+  Include:
+    - lib/**/*.rb
+    - spec/**/*.rb
+    - Gemfile
+    - Rakefile
+    - armonica.gemspec
+    - bin/console
+    - bin/rspec
+
+# NOTE: for code clarity in tests
+RSpec/LeakyConstantDeclaration:
+  Enabled: false
+
+# NOTE: support for old ruby versions
+Style/RedundantBegin:
+  Enabled: false
+
+# NOTE: too situative
+Metrics/ParameterLists:
+  Enabled: false
