@@ -2,5 +2,5 @@
 # frozen_string_literal: true
 
 module Armonica
-  VERSION = '0.1.0'
+  VERSION = T.let('0.1.0', String)
 end
