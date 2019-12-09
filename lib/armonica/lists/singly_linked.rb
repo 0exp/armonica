@@ -25,16 +25,15 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
 
   sig { returns(Integer) }
   def count
-    initial_count   = T.let(0, Integer)
+    initial_count = T.let(0, Integer)
     current_element = T.let(root, T.nilable(Armonica::Lists::Element))
 
-    if current_element.nil?
-      initial_count
-    else
+    unless current_element.nil?
       initial_count += 1
       initial_count += 1 until (current_element = current_element.next).nil?
-      initial_count
     end
+
+    initial_count
   end
 
   private
