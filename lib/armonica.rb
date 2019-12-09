@@ -6,5 +6,6 @@ require 'sorbet-runtime'
 module Armonica
   extend T::Sig
 
-  require 'armonica/version'
+  require_relative 'armonica/version'
+  require_relative 'armonica/lists'
 end

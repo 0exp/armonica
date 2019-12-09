@@ -2,6 +2,6 @@
 
 RSpec.describe 'Smoke test' do
   specify do
-    expect(Armonica::VERSION).to be_a(String)
+    expect(Armonica::VERSION).to eq('0.1.0')
   end
 end
