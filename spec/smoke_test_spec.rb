@@ -12,6 +12,9 @@ RSpec.describe 'Smoke test' do
     list.append('7')
     expect(list.count).to eq(2)
 
+    list.prepend(9)
+    expect(list.count).to eq(3)
+
     expect(Armonica::VERSION).to eq('0.1.0')
   end
 end

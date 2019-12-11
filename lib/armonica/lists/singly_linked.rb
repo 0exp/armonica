@@ -23,6 +23,13 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
     end
   end
 
+  sig { params(value: T.nilable(BasicObject)).void }
+  def prepend(value)
+    new_root = T.let(Armonica::Lists::Element.new(value), Armonica::Lists::Element)
+    new_root.assign_next(T.must(root)) unless root.nil?
+    assign_root(new_root)
+  end
+
   sig { returns(Integer) }
   def count
     initial_count = T.let(0, Integer)
