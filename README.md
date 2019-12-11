@@ -1,21 +1,21 @@
 # Armonica
 
-**(in active development)** A set of commonly used data structures powered by Sorbet 🍦
+A set of commonly used data structures powered by Sorbet 🍦 **(in active development)**
 
 ## Installation
 
 ```ruby
-gem 'qonfig'
+gem 'armonica'
 ```
 
 ```shell
 $ bundle install
 # --- or ---
-$ gem install 'qonfig'
+$ gem install 'armonica'
 ```
 
 ```ruby
-require 'qonfig'
+require 'armonica'
 ```
 
 ---
@@ -28,15 +28,15 @@ require 'qonfig'
 
 ### Singly Linked List
 
-- `#append(value)` (`sig { params(value: T.nilable(BasicObject)).void }`)
-- `#prepend(value)` (`{ params(value: T.nilable(BasicObject)).void }`)
-- `#count` (`sig { returns(Integer) }`)
+- `#append(value)`
+- `#prepend(value)`
+- `#count`
 
 ---
 
 ## Contributing
 
-- Fork it ( https://github.com/0exp/qonfig/fork )
+- Fork it ( https://github.com/0exp/armonica/fork )
 - Create your feature branch (`git checkout -b feature/my-new-feature`)
 - Commit your changes (`git commit -am '[my-new-featre] Add some feature'`)
 - Push to the branch (`git push origin feature/my-new-feature`)
