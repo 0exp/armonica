@@ -30,6 +30,7 @@ require 'armonica'
 
 - `#append(value)`
 - `#prepend(value)`
+- `#link(list)`
 - `#count`
 
 ---

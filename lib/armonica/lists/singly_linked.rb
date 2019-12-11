@@ -34,7 +34,7 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
   end
 
   sig { params(list: Armonica::Lists::SinglyLinked).void }
-  def extend(list)
+  def link(list)
     extention_head = T.let(list.root, T.nilable(Armonica::Lists::Element))
     return nil if extention_head.nil?
     last_element = T.let(root, T.nilable(Armonica::Lists::Element))
