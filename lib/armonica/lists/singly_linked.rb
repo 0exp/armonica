@@ -4,6 +4,9 @@
 class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
   extend T::Sig
 
+  sig { returns(T.nilable(Armonica::Lists::Element)) }
+  attr_reader :root
+
   sig { void }
   def initialize
     super
@@ -30,6 +33,21 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
     assign_root(new_root)
   end
 
+  sig { params(list: Armonica::Lists::SinglyLinked).void }
+  def extend(list)
+    extention_head = T.let(list.root, T.nilable(Armonica::Lists::Element))
+    return nil if extention_head.nil?
+    last_element = T.let(root, T.nilable(Armonica::Lists::Element))
+
+    case
+    when last_element.nil?
+      assign_root(extention_head)
+    else
+      last_element = last_element.next until last_element.next.nil?
+      last_element.assign_next(extention_head)
+    end
+  end
+
   sig { returns(Integer) }
   def count
     initial_count = T.let(0, Integer)
@@ -44,9 +62,6 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
   end
 
   private
-
-  sig { returns(T.nilable(Armonica::Lists::Element)) }
-  attr_reader :root
 
   sig { params(element: Armonica::Lists::Element).void }
   def assign_root(element)

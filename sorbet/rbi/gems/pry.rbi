@@ -1133,112 +1133,124 @@ class Pry::Result
   def retval; end
   def void_command?; end
 end
+class Pry::Command::AmendLine < Pry::ClassCommand
+  def amend_input; end
+  def delete_from_array(array, range); end
+  def insert_into_array(array, range); end
+  def line_count; end
+  def line_range; end
+  def process; end
+  def replace_in_array(array, range); end
+  def start_and_end_line_number; end
+  def zero_indexed_range_from_one_indexed_numbers(start_line_number, end_line_number); end
+end
 class Pry::Command::Bang < Pry::ClassCommand
   def process; end
 end
-class Pry::Command::Whereami < Pry::ClassCommand
-  def bad_option_combination?; end
-  def class_code; end
-  def code; end
-  def code?; end
-  def code_window; end
-  def default_code; end
-  def expand_path(f); end
-  def handle_internal_binding; end
-  def initialize(*arg0); end
-  def location; end
-  def marker; end
-  def method_code; end
-  def nothing_to_do?; end
+class Pry::Command::BangPry < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::Cat < Pry::ClassCommand
+  def complete(search); end
+  def load_path_completions; end
   def options(opt); end
   def process; end
-  def self.method_size_cutoff; end
-  def self.method_size_cutoff=(arg0); end
-  def setup; end
-  def small_method?; end
-  def target_class; end
-  def top_level?; end
+end
+class Pry::Command::Cat::AbstractFormatter
+  def between_lines; end
+  def code_type; end
+  def decorate(content); end
   def use_line_numbers?; end
-  def valid_method?; end
-  def window_size; end
+  include Pry::Helpers::BaseHelpers
+  include Pry::Helpers::CommandHelpers
+end
+class Pry::Command::Cat::InputExpressionFormatter < Pry::Command::Cat::AbstractFormatter
+  def format; end
+  def initialize(input_expressions, opts); end
+  def input_expressions; end
+  def input_expressions=(arg0); end
+  def normalized_expression_range; end
+  def numbered_input_items; end
+  def opts; end
+  def opts=(arg0); end
+  def selected_input_items; end
+end
+class Pry::Command::Cat::ExceptionFormatter < Pry::Command::Cat::AbstractFormatter
+  def _pry_; end
+  def backtrace_file; end
+  def backtrace_level; end
+  def backtrace_line; end
+  def check_for_errors; end
+  def code_window_size; end
+  def ex; end
+  def format; end
+  def header; end
+  def increment_backtrace_level; end
+  def initialize(exception, _pry_, opts); end
+  def opts; end
+  def start_and_end_line_for_code_window; end
+  include Pry::Helpers::Text
+end
+class Pry::Command::Cat::FileFormatter < Pry::Command::Cat::AbstractFormatter
+  def _pry_; end
+  def code_type; end
+  def code_window_size; end
+  def decorate(content); end
+  def detect_code_type_from_file(file_name); end
+  def file_and_line; end
+  def file_name; end
+  def file_with_embedded_line; end
+  def format; end
+  def initialize(file_with_embedded_line, _pry_, opts); end
+  def line_number; end
+  def opts; end
 end
 class Pry::Command::Cd < Pry::ClassCommand
   def process; end
 end
-class Pry::Command::ShowInput < Pry::ClassCommand
-  def process; end
+class Pry::Command::ChangeInspector < Pry::ClassCommand
+  def inspector_map; end
+  def process(inspector); end
 end
-class Pry::Command::GemOpen < Pry::ClassCommand
-  def complete(str); end
-  def process(gem); end
-end
-class Pry::Command::ShellMode < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::Help < Pry::ClassCommand
-  def command_groups; end
-  def display_command(command); end
-  def display_filtered_commands(search); end
-  def display_filtered_search_results(search); end
-  def display_index(groups); end
-  def display_search(search); end
-  def group_sort_key(group_name); end
-  def help_text_for_commands(name, commands); end
-  def normalize(key); end
-  def process; end
-  def search_hash(search, hash); end
-  def sorted_commands(commands); end
-  def sorted_group_names(groups); end
-  def visible_commands; end
-end
-class Pry::Command::GemStat < Pry::ClassCommand
-  def format_dependencies(rdeps); end
-  def format_gem(h); end
-  def process(name); end
-end
-class Pry::Command::Exit < Pry::ClassCommand
-  def process; end
-  def process_pop_and_return; end
-end
-class Pry::Command::InstallCommand < Pry::ClassCommand
-  def process(name); end
-end
-class Pry::Command::ExitAll < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::Gist < Pry::ClassCommand
-  def clipboard_content(content); end
-  def comment_expression_result_for_gist(result); end
-  def gist_content(content, filename); end
-  def input_content; end
+class Pry::Command::ChangePrompt < Pry::ClassCommand
+  def change_prompt(prompt); end
+  def list_prompts; end
   def options(opt); end
-  def process; end
-  def setup; end
-end
-class Pry::Command::Stat < Pry::ClassCommand
-  def options(opt); end
-  def process; end
+  def process(prompt); end
 end
 class Pry::Command::ClearScreen < Pry::ClassCommand
   def process; end
 end
-class Pry::Command::ListInspectors < Pry::ClassCommand
-  def inspector_map; end
+class Pry::Command::CodeCollector
+  def _pry_; end
+  def args; end
+  def bad_option_combination?; end
+  def code_object; end
+  def code_object_doc; end
+  def code_object_source_or_file; end
+  def content; end
+  def convert_to_range(n); end
+  def could_not_locate(name); end
+  def file; end
+  def file=(arg0); end
+  def file_content; end
+  def initialize(args, opts, _pry_); end
+  def line_range; end
+  def obj_name; end
+  def opts; end
+  def pry_array_content_as_string(array, ranges, &block); end
+  def pry_input_content; end
+  def pry_output_content; end
+  def restrict_to_lines(content, range); end
+  def self.inject_options(opt); end
+  def self.input_expression_ranges; end
+  def self.input_expression_ranges=(arg0); end
+  def self.output_result_ranges; end
+  def self.output_result_ranges=(arg0); end
+  include Pry::Helpers::CommandHelpers
+end
+class Pry::Command::DisablePry < Pry::ClassCommand
   def process; end
-  def selected_inspector?(inspector); end
-  def selected_text; end
-end
-class Pry::Command::Version < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::GemReadme < Pry::ClassCommand
-  def process(name); end
-end
-class Pry::Command::RaiseUp < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::Ri < Pry::ClassCommand
-  def process(spec); end
 end
 class Pry::Command::Edit < Pry::ClassCommand
   def apply_runtime_patch; end
@@ -1281,57 +1293,14 @@ module Pry::Command::Edit::FileAndLineLocator
   def self.from_exception(exception, backtrace_level); end
   def self.from_filename_argument(filename_argument); end
 end
-class Pry::Command::CodeCollector
-  def _pry_; end
-  def args; end
-  def bad_option_combination?; end
-  def code_object; end
-  def code_object_doc; end
-  def code_object_source_or_file; end
-  def content; end
-  def convert_to_range(n); end
-  def could_not_locate(name); end
-  def file; end
-  def file=(arg0); end
-  def file_content; end
-  def initialize(args, opts, _pry_); end
-  def line_range; end
-  def obj_name; end
-  def opts; end
-  def pry_array_content_as_string(array, ranges, &block); end
-  def pry_input_content; end
-  def pry_output_content; end
-  def restrict_to_lines(content, range); end
-  def self.inject_options(opt); end
-  def self.input_expression_ranges; end
-  def self.input_expression_ranges=(arg0); end
-  def self.output_result_ranges; end
-  def self.output_result_ranges=(arg0); end
-  include Pry::Helpers::CommandHelpers
-end
-class Pry::Command::SaveFile < Pry::ClassCommand
-  def display_content; end
-  def file_name; end
-  def mode; end
-  def options(opt); end
+class Pry::Command::Exit < Pry::ClassCommand
   def process; end
-  def save_file; end
+  def process_pop_and_return; end
 end
-class Pry::Command::Play < Pry::ClassCommand
-  def code_object; end
-  def content; end
-  def content_after_options; end
-  def content_at_expression; end
-  def default_file; end
-  def file_content; end
-  def options(opt); end
-  def perform_play; end
+class Pry::Command::ExitAll < Pry::ClassCommand
   def process; end
-  def should_use_default_file?; end
-  def show_input; end
 end
-class Pry::Command::ToggleColor < Pry::ClassCommand
-  def color_toggle; end
+class Pry::Command::ExitProgram < Pry::ClassCommand
   def process; end
 end
 class Pry::Command::FindMethod < Pry::ClassCommand
@@ -1350,33 +1319,87 @@ class Pry::Command::FindMethod < Pry::ClassCommand
   def show_search_results(matches); end
   extend Pry::Helpers::BaseHelpers
 end
-class Pry::Command::ShowInfo < Pry::ClassCommand
-  def code_object_header(code_object, line_num); end
-  def code_object_with_accessible_source(code_object); end
-  def complete(input); end
-  def content_and_header_for_code_object(code_object); end
-  def content_and_headers_for_all_module_candidates(mod); end
-  def file_and_line_for(code_object); end
-  def header(code_object); end
-  def header_options; end
-  def initialize(*arg0); end
-  def method_header(code_object, line_num); end
-  def method_sections(code_object); end
-  def module_header(code_object, line_num); end
-  def no_definition_message; end
-  def obj_name; end
-  def options(opt); end
+class Pry::Command::FixIndent < Pry::ClassCommand
   def process; end
-  def show_all_modules?(code_object); end
-  def start_line_for(code_object); end
-  def use_line_numbers?; end
-  def valid_superclass?(code_object); end
-  extend Pry::Helpers::BaseHelpers
 end
-class Pry::Command::ShowSource < Pry::Command::ShowInfo
-  def content_for(code_object); end
+class Pry::Command::GemCd < Pry::ClassCommand
+  def complete(str); end
+  def process(gem); end
+end
+class Pry::Command::GemInstall < Pry::ClassCommand
+  def process(gem); end
+  def setup; end
+end
+class Pry::Command::GemList < Pry::ClassCommand
+  def process(pattern = nil); end
+end
+class Pry::Command::GemOpen < Pry::ClassCommand
+  def complete(str); end
+  def process(gem); end
+end
+class Pry::Command::GemReadme < Pry::ClassCommand
+  def process(name); end
+end
+class Pry::Command::GemSearch < Pry::ClassCommand
+  def list_as_string(gems, limit = nil); end
+  def options(opt); end
+  def process(str); end
+  def setup; end
+end
+class Pry::Command::GemStat < Pry::ClassCommand
+  def format_dependencies(rdeps); end
+  def format_gem(h); end
+  def process(name); end
+end
+class Pry::Command::Gist < Pry::ClassCommand
+  def clipboard_content(content); end
+  def comment_expression_result_for_gist(result); end
+  def gist_content(content, filename); end
+  def input_content; end
   def options(opt); end
   def process; end
+  def setup; end
+end
+class Pry::Command::Help < Pry::ClassCommand
+  def command_groups; end
+  def display_command(command); end
+  def display_filtered_commands(search); end
+  def display_filtered_search_results(search); end
+  def display_index(groups); end
+  def display_search(search); end
+  def group_sort_key(group_name); end
+  def help_text_for_commands(name, commands); end
+  def normalize(key); end
+  def process; end
+  def search_hash(search, hash); end
+  def sorted_commands(commands); end
+  def sorted_group_names(groups); end
+  def visible_commands; end
+end
+class Pry::Command::Hist < Pry::ClassCommand
+  def check_for_juxtaposed_replay(replay_sequence); end
+  def find_history; end
+  def options(opt); end
+  def process; end
+  def process_clear; end
+  def process_display; end
+  def process_replay; end
+  def process_save; end
+end
+class Pry::Command::ImportSet < Pry::ClassCommand
+  def process(_command_set_name); end
+end
+class Pry::Command::InstallCommand < Pry::ClassCommand
+  def process(name); end
+end
+class Pry::Command::JumpTo < Pry::ClassCommand
+  def process(break_level); end
+end
+class Pry::Command::ListInspectors < Pry::ClassCommand
+  def inspector_map; end
+  def process; end
+  def selected_inspector?(inspector); end
+  def selected_text; end
 end
 class Pry::Command::Ls < Pry::ClassCommand
   def error_list; end
@@ -1476,70 +1499,86 @@ class Pry::Command::Ls::LsEntity
   def methods; end
   def self_methods; end
 end
-class Pry::Command::Cat < Pry::ClassCommand
-  def complete(search); end
-  def load_path_completions; end
+class Pry::Command::Nesting < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::Play < Pry::ClassCommand
+  def code_object; end
+  def content; end
+  def content_after_options; end
+  def content_at_expression; end
+  def default_file; end
+  def file_content; end
+  def options(opt); end
+  def perform_play; end
+  def process; end
+  def should_use_default_file?; end
+  def show_input; end
+end
+class Pry::Command::PryBacktrace < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::Version < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::RaiseUp < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::ReloadCode < Pry::ClassCommand
+  def check_for_reloadability(code_object, identifier); end
+  def current_file; end
+  def process; end
+  def reload_current_file; end
+  def reload_object(identifier); end
+end
+class Pry::Command::Reset < Pry::ClassCommand
+  def process; end
+end
+class Pry::Command::Ri < Pry::ClassCommand
+  def process(spec); end
+end
+class Pry::Command::SaveFile < Pry::ClassCommand
+  def display_content; end
+  def file_name; end
+  def mode; end
   def options(opt); end
   def process; end
+  def save_file; end
 end
-class Pry::Command::Cat::AbstractFormatter
-  def between_lines; end
-  def code_type; end
-  def decorate(content); end
-  def use_line_numbers?; end
-  include Pry::Helpers::BaseHelpers
-  include Pry::Helpers::CommandHelpers
+class Pry::Command::ShellCommand < Pry::ClassCommand
+  def cd_path_env; end
+  def cd_path_exists?; end
+  def parse_destination(dest); end
+  def path_from_cd_path(dest); end
+  def process(cmd); end
+  def process_cd(dest); end
+  def special_case_path?(dest); end
 end
-class Pry::Command::Cat::InputExpressionFormatter < Pry::Command::Cat::AbstractFormatter
-  def format; end
-  def initialize(input_expressions, opts); end
-  def input_expressions; end
-  def input_expressions=(arg0); end
-  def normalized_expression_range; end
-  def numbered_input_items; end
-  def opts; end
-  def opts=(arg0); end
-  def selected_input_items; end
-end
-class Pry::Command::Cat::ExceptionFormatter < Pry::Command::Cat::AbstractFormatter
-  def _pry_; end
-  def backtrace_file; end
-  def backtrace_level; end
-  def backtrace_line; end
-  def check_for_errors; end
-  def code_window_size; end
-  def ex; end
-  def format; end
-  def header; end
-  def increment_backtrace_level; end
-  def initialize(exception, _pry_, opts); end
-  def opts; end
-  def start_and_end_line_for_code_window; end
-  include Pry::Helpers::Text
-end
-class Pry::Command::Cat::FileFormatter < Pry::Command::Cat::AbstractFormatter
-  def _pry_; end
-  def code_type; end
-  def code_window_size; end
-  def decorate(content); end
-  def detect_code_type_from_file(file_name); end
-  def file_and_line; end
-  def file_name; end
-  def file_with_embedded_line; end
-  def format; end
-  def initialize(file_with_embedded_line, _pry_, opts); end
-  def line_number; end
-  def opts; end
-end
-class Pry::Command::GemList < Pry::ClassCommand
-  def process(pattern = nil); end
-end
-class Pry::Command::ChangeInspector < Pry::ClassCommand
-  def inspector_map; end
-  def process(inspector); end
-end
-class Pry::Command::ExitProgram < Pry::ClassCommand
+class Pry::Command::ShellMode < Pry::ClassCommand
   def process; end
+end
+class Pry::Command::ShowInfo < Pry::ClassCommand
+  def code_object_header(code_object, line_num); end
+  def code_object_with_accessible_source(code_object); end
+  def complete(input); end
+  def content_and_header_for_code_object(code_object); end
+  def content_and_headers_for_all_module_candidates(mod); end
+  def file_and_line_for(code_object); end
+  def header(code_object); end
+  def header_options; end
+  def initialize(*arg0); end
+  def method_header(code_object, line_num); end
+  def method_sections(code_object); end
+  def module_header(code_object, line_num); end
+  def no_definition_message; end
+  def obj_name; end
+  def options(opt); end
+  def process; end
+  def show_all_modules?(code_object); end
+  def start_line_for(code_object); end
+  def use_line_numbers?; end
+  def valid_superclass?(code_object); end
+  extend Pry::Helpers::BaseHelpers
 end
 class Pry::Command::ShowDoc < Pry::Command::ShowInfo
   def content_for(code_object); end
@@ -1549,25 +1588,24 @@ class Pry::Command::ShowDoc < Pry::Command::ShowInfo
   def start_line_for(code_object); end
   include Pry::Helpers::DocumentationHelpers
 end
-class Pry::Command::Reset < Pry::ClassCommand
+class Pry::Command::ShowInput < Pry::ClassCommand
   def process; end
 end
-class Pry::Command::DisablePry < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::ImportSet < Pry::ClassCommand
-  def process(_command_set_name); end
-end
-class Pry::Command::FixIndent < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::Wtf < Pry::ClassCommand
-  def backtrace; end
-  def exception; end
+class Pry::Command::ShowSource < Pry::Command::ShowInfo
+  def content_for(code_object); end
   def options(opt); end
   def process; end
-  def size_of_backtrace; end
-  def with_line_numbers(bt); end
+end
+class Pry::Command::Stat < Pry::ClassCommand
+  def options(opt); end
+  def process; end
+end
+class Pry::Command::SwitchTo < Pry::ClassCommand
+  def process(selection); end
+end
+class Pry::Command::ToggleColor < Pry::ClassCommand
+  def color_toggle; end
+  def process; end
 end
 class Pry::Command::WatchExpression < Pry::ClassCommand
   def add_expression(_arguments); end
@@ -1591,77 +1629,39 @@ class Pry::Command::WatchExpression::Expression
   def to_s; end
   def value; end
 end
-class Pry::Command::AmendLine < Pry::ClassCommand
-  def amend_input; end
-  def delete_from_array(array, range); end
-  def insert_into_array(array, range); end
-  def line_count; end
-  def line_range; end
-  def process; end
-  def replace_in_array(array, range); end
-  def start_and_end_line_number; end
-  def zero_indexed_range_from_one_indexed_numbers(start_line_number, end_line_number); end
-end
-class Pry::Command::BangPry < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::ReloadCode < Pry::ClassCommand
-  def check_for_reloadability(code_object, identifier); end
-  def current_file; end
-  def process; end
-  def reload_current_file; end
-  def reload_object(identifier); end
-end
-class Pry::Command::Nesting < Pry::ClassCommand
-  def process; end
-end
-class Pry::Command::ShellCommand < Pry::ClassCommand
-  def cd_path_env; end
-  def cd_path_exists?; end
-  def parse_destination(dest); end
-  def path_from_cd_path(dest); end
-  def process(cmd); end
-  def process_cd(dest); end
-  def special_case_path?(dest); end
-end
-class Pry::Command::GemCd < Pry::ClassCommand
-  def complete(str); end
-  def process(gem); end
-end
-class Pry::Command::JumpTo < Pry::ClassCommand
-  def process(break_level); end
-end
-class Pry::Command::ChangePrompt < Pry::ClassCommand
-  def change_prompt(prompt); end
-  def list_prompts; end
+class Pry::Command::Whereami < Pry::ClassCommand
+  def bad_option_combination?; end
+  def class_code; end
+  def code; end
+  def code?; end
+  def code_window; end
+  def default_code; end
+  def expand_path(f); end
+  def handle_internal_binding; end
+  def initialize(*arg0); end
+  def location; end
+  def marker; end
+  def method_code; end
+  def nothing_to_do?; end
   def options(opt); end
-  def process(prompt); end
-end
-class Pry::Command::SwitchTo < Pry::ClassCommand
-  def process(selection); end
-end
-class Pry::Command::GemSearch < Pry::ClassCommand
-  def list_as_string(gems, limit = nil); end
-  def options(opt); end
-  def process(str); end
+  def process; end
+  def self.method_size_cutoff; end
+  def self.method_size_cutoff=(arg0); end
   def setup; end
+  def small_method?; end
+  def target_class; end
+  def top_level?; end
+  def use_line_numbers?; end
+  def valid_method?; end
+  def window_size; end
 end
-class Pry::Command::GemInstall < Pry::ClassCommand
-  def process(gem); end
-  def setup; end
-end
-class Pry::Command::Hist < Pry::ClassCommand
-  def check_for_juxtaposed_replay(replay_sequence); end
-  def find_history; end
+class Pry::Command::Wtf < Pry::ClassCommand
+  def backtrace; end
+  def exception; end
   def options(opt); end
   def process; end
-  def process_clear; end
-  def process_display; end
-  def process_replay; end
-  def process_save; end
-end
-class Pry::Command::PryBacktrace < Pry::ClassCommand
-  def process; end
+  def size_of_backtrace; end
+  def with_line_numbers(bt); end
 end
 class Pry::PluginManager
   def gem_list; end

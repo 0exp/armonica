@@ -144,9 +144,6 @@
 # wrong constant name <todo sym>
 # uninitialized constant Abbrev
 # uninitialized constant Abbrev
-# undefined method `connect_internal<defaultArg>1' for class `Addrinfo'
-# wrong constant name connect_internal<defaultArg>1
-# wrong constant name connect_internal
 # wrong constant name bsearch
 # wrong constant name bsearch_index
 # wrong constant name collect!
@@ -163,7 +160,7 @@
 # uninitialized constant Benchmark
 # uninitialized constant Benchmark
 # wrong constant name clone
-# wrong constant name new
+# wrong constant name ver
 # wrong constant name clone
 # wrong constant name irb
 # undefined singleton method `report<defaultArg>1' for `Bundler::Env'
@@ -254,21 +251,6 @@
 # wrong constant name max_retries=
 # wrong constant name redirect_limit
 # wrong constant name redirect_limit=
-# wrong constant name link
-# undefined singleton method `cp_lr<defaultArg>1' for `Bundler::FileUtils'
-# undefined singleton method `cp_lr<defaultArg>2' for `Bundler::FileUtils'
-# undefined singleton method `cp_lr<defaultArg>3' for `Bundler::FileUtils'
-# undefined singleton method `cp_lr<defaultArg>4' for `Bundler::FileUtils'
-# undefined singleton method `link_entry<defaultArg>1' for `Bundler::FileUtils'
-# undefined singleton method `link_entry<defaultArg>2' for `Bundler::FileUtils'
-# wrong constant name cp_lr<defaultArg>1
-# wrong constant name cp_lr<defaultArg>2
-# wrong constant name cp_lr<defaultArg>3
-# wrong constant name cp_lr<defaultArg>4
-# wrong constant name cp_lr
-# wrong constant name link_entry<defaultArg>1
-# wrong constant name link_entry<defaultArg>2
-# wrong constant name link_entry
 # undefined method `git_push<defaultArg>1' for class `Bundler::GemHelper'
 # undefined method `initialize<defaultArg>1' for class `Bundler::GemHelper'
 # Did you mean?  initialize_dup
@@ -278,15 +260,22 @@
 # undefined method `install_gem<defaultArg>2' for class `Bundler::GemHelper'
 # undefined method `perform_git_push<defaultArg>1' for class `Bundler::GemHelper'
 # uninitialized constant Bundler::GemHelper::DEFAULT
+# Did you mean?  Bundler::GemHelper::DEFAULT
 # uninitialized constant Bundler::GemHelper::LN_SUPPORTED
+# Did you mean?  Bundler::GemHelper::LN_SUPPORTED
 # uninitialized constant Bundler::GemHelper::LOW_METHODS
 # Did you mean?  Bundler::GemHelper::LowMethods
+#                Bundler::GemHelper::LOW_METHODS
 # uninitialized constant Bundler::GemHelper::METHODS
 # Did you mean?  Method
+#                Bundler::GemHelper::METHODS
 # uninitialized constant Bundler::GemHelper::OPT_TABLE
+# Did you mean?  Bundler::GemHelper::OPT_TABLE
 # uninitialized constant Bundler::GemHelper::RUBY
+# Did you mean?  Bundler::GemHelper::RUBY
 # uninitialized constant Bundler::GemHelper::VERSION
-# Did you mean?  Bundler::VERSION
+# Did you mean?  Bundler::GemHelper::VERSION
+#                Bundler::VERSION
 # wrong constant name allowed_push_host
 # wrong constant name already_tagged?
 # wrong constant name base
@@ -313,8 +302,7 @@
 # wrong constant name perform_git_push
 # wrong constant name rubygem_push
 # wrong constant name sh
-# wrong constant name sh_with_input
-# wrong constant name sh_with_status
+# wrong constant name sh_with_code
 # wrong constant name spec_path
 # wrong constant name tag_version
 # wrong constant name version
@@ -327,6 +315,7 @@
 # wrong constant name instance
 # wrong constant name instance=
 # uninitialized constant Bundler::GemRemoteFetcher::BASE64_URI_TRANSLATE
+# Did you mean?  Bundler::GemRemoteFetcher::BASE64_URI_TRANSLATE
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Bundler::GemVersionPromoter'
 # Did you mean?  initialize_dup
@@ -451,13 +440,16 @@
 # wrong constant name install_definition
 # undefined method `generate_bin<defaultArg>1' for class `Bundler::Plugin::Installer::Git'
 # uninitialized constant Bundler::Plugin::Installer::Git::DEFAULT_GLOB
+# Did you mean?  Bundler::Plugin::Installer::Git::DEFAULT_GLOB
 # wrong constant name generate_bin<defaultArg>1
 # wrong constant name generate_bin
 # wrong constant name <static-init>
 # uninitialized constant Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
 # Did you mean?  Bundler::Plugin::Installer::Rubygems::API_REQUEST_SIZE
+#                Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
 # uninitialized constant Bundler::Plugin::Installer::Rubygems::API_REQUEST_SIZE
-# Did you mean?  Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
+# Did you mean?  Bundler::Plugin::Installer::Rubygems::API_REQUEST_SIZE
+#                Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -485,10 +477,8 @@
 # wrong constant name default_attempts
 # wrong constant name default_retries
 # uninitialized constant Bundler::RubyGemsGemInstaller::ENV_PATHS
+# Did you mean?  Bundler::RubyGemsGemInstaller::ENV_PATHS
 # wrong constant name <static-init>
-# uninitialized constant Bundler::RubygemsIntegration::MoreFuture::EXT_LOCK
-# Did you mean?  Bundler::RubygemsIntegration::EXT_LOCK
-# wrong constant name default_stubs
 # undefined method `initialize<defaultArg>1' for class `Bundler::Settings::Mirror'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `Bundler::Settings::Mirror'
@@ -753,6 +743,7 @@
 # wrong constant name <static-init>
 # wrong constant name []
 # uninitialized constant CodeRay::Encoders::Terminal::DEFAULT_OPTIONS
+# Did you mean?  CodeRay::Encoders::Terminal::DEFAULT_OPTIONS
 # wrong constant name <Class:UnknownFileType>
 # wrong constant name <static-init>
 # undefined singleton method `[]<defaultArg>1' for `CodeRay::FileType'
@@ -779,9 +770,11 @@
 # undefined method `tokenize<defaultArg>2' for class `CodeRay::Scanners::Scanner'
 # uninitialized constant CodeRay::Scanners::Scanner::Elem
 # uninitialized constant CodeRay::Scanners::Scanner::Id
+# Did you mean?  CodeRay::Scanners::Scanner::Id
 # wrong constant name <Class:ScanError>
 # uninitialized constant CodeRay::Scanners::Scanner::Version
-# Did you mean?  CodeRay::VERSION
+# Did you mean?  CodeRay::Scanners::Scanner::Version
+#                CodeRay::VERSION
 # wrong constant name binary_string
 # wrong constant name column<defaultArg>1
 # wrong constant name column
@@ -878,7 +871,6 @@
 # wrong constant name rectangular
 # uninitialized constant Configatron
 # uninitialized constant Configatron
-# wrong constant name line_stub
 # wrong constant name peek_result
 # wrong constant name running?
 # undefined method `initialize<defaultArg>1' for class `Date::Infinity'
@@ -917,6 +909,10 @@
 # wrong constant name original_message
 # wrong constant name spell_checker
 # wrong constant name to_s
+# wrong constant name +
+# wrong constant name <<
+# uninitialized constant DidYouMean::DeprecatedIgnoredCallers::Elem
+# wrong constant name <static-init>
 # uninitialized constant DidYouMean::Formatter
 # uninitialized constant DidYouMean::Formatter
 # wrong constant name distance
@@ -946,8 +942,6 @@
 # wrong constant name name
 # wrong constant name formatter
 # wrong constant name formatter=
-# wrong constant name children
-# wrong constant name each_child
 # undefined singleton method `mktmpdir<defaultArg>1' for `Dir'
 # wrong constant name children
 # wrong constant name each_child
@@ -957,16 +951,10 @@
 # wrong constant name tmpdir
 # undefined method `def_method<defaultArg>1' for class `ERB'
 # undefined method `def_module<defaultArg>1' for class `ERB'
-# undefined method `initialize<defaultArg>4' for class `ERB'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>5' for class `ERB'
-# Did you mean?  initialize_dup
 # wrong constant name def_method<defaultArg>1
 # wrong constant name def_method
 # wrong constant name def_module<defaultArg>1
 # wrong constant name def_module
-# wrong constant name initialize<defaultArg>4
-# wrong constant name initialize<defaultArg>5
 # wrong constant name result_with_hash
 # wrong constant name _dump
 # wrong constant name convert
@@ -999,7 +987,6 @@
 # wrong constant name _load
 # wrong constant name locale_charmap
 # undefined method `to_set<defaultArg>1' for module `Enumerable'
-# wrong constant name chain
 # wrong constant name chunk
 # wrong constant name chunk_while
 # wrong constant name each_entry
@@ -1012,34 +999,13 @@
 # wrong constant name to_set
 # wrong constant name uniq
 # wrong constant name zip
-# wrong constant name +
-# wrong constant name <Class:ArithmeticSequence>
-# wrong constant name <Class:Chain>
 # wrong constant name each_with_index
-# uninitialized constant Enumerator::ArithmeticSequence::Elem
-# wrong constant name begin
-# wrong constant name each
-# wrong constant name end
-# wrong constant name exclude_end?
-# wrong constant name last
-# wrong constant name step
-# wrong constant name <static-init>
-# uninitialized constant Enumerator::Chain::Elem
-# wrong constant name <static-init>
 # wrong constant name each
 # wrong constant name initialize
 # wrong constant name chunk
 # wrong constant name chunk_while
 # wrong constant name force
 # wrong constant name slice_when
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -1095,23 +1061,32 @@
 # wrong constant name lutime
 # wrong constant name mkfifo
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
-# Did you mean?  FileUtils::LN_SUPPORTED
+# Did you mean?  FileUtils::DryRun::LN_SUPPORTED
+#                FileUtils::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
 # Did you mean?  FileUtils::RUBY
+#                FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
-# Did you mean?  FileUtils::VERSION
+# Did you mean?  FileUtils::DryRun::VERSION
+#                FileUtils::VERSION
 # uninitialized constant FileUtils::NoWrite::LN_SUPPORTED
-# Did you mean?  FileUtils::LN_SUPPORTED
+# Did you mean?  FileUtils::NoWrite::LN_SUPPORTED
+#                FileUtils::LN_SUPPORTED
 # uninitialized constant FileUtils::NoWrite::RUBY
 # Did you mean?  FileUtils::RUBY
+#                FileUtils::NoWrite::RUBY
 # uninitialized constant FileUtils::NoWrite::VERSION
-# Did you mean?  FileUtils::VERSION
+# Did you mean?  FileUtils::NoWrite::VERSION
+#                FileUtils::VERSION
 # uninitialized constant FileUtils::Verbose::LN_SUPPORTED
-# Did you mean?  FileUtils::LN_SUPPORTED
+# Did you mean?  FileUtils::Verbose::LN_SUPPORTED
+#                FileUtils::LN_SUPPORTED
 # uninitialized constant FileUtils::Verbose::RUBY
 # Did you mean?  FileUtils::RUBY
+#                FileUtils::Verbose::RUBY
 # uninitialized constant FileUtils::Verbose::VERSION
-# Did you mean?  FileUtils::VERSION
+# Did you mean?  FileUtils::Verbose::VERSION
+#                FileUtils::VERSION
 # undefined method `def_delegator<defaultArg>1' for module `Forwardable'
 # undefined method `def_instance_delegator<defaultArg>1' for module `Forwardable'
 # wrong constant name def_delegator<defaultArg>1
@@ -1127,13 +1102,32 @@
 # wrong constant name _valid_method?
 # wrong constant name debug
 # wrong constant name debug=
-# wrong constant name <static-init>
 # wrong constant name garbage_collect
 # wrong constant name latest_gc_info
 # wrong constant name stress=
 # wrong constant name verify_internal_consistency
-# wrong constant name verify_transient_heap_internal_consistency
+# wrong constant name without_filtering
+# wrong constant name _deprecated_gems_to_install
+# wrong constant name gems_to_install
+# undefined method `extension_build_error<defaultArg>1' for class `Gem::Installer'
+# wrong constant name extension_build_error<defaultArg>1
+# wrong constant name verify_spec_name
+# wrong constant name realpath
+# wrong constant name api_endpoint
 # uninitialized constant Gem::Resolver::Molinillo::DependencyGraph::Log::Elem
+# wrong constant name <=>
+# wrong constant name api_uri
+# wrong constant name <=>
+# uninitialized constant Gem::Specification::GENERICS
+# Did you mean?  Gem::Specification::GENERICS
+# uninitialized constant Gem::Specification::GENERIC_CACHE
+# Did you mean?  Gem::Specification::GENERIC_CACHE
+# wrong constant name bundled_gem_in_old_ruby?
+# wrong constant name rubyforge_project
+# wrong constant name warning
+# undefined singleton method `detect_gemdeps<defaultArg>1' for `Gem'
+# wrong constant name _deprecated_datadir
+# wrong constant name detect_gemdeps<defaultArg>1
 # wrong constant name <
 # wrong constant name <=
 # wrong constant name >
@@ -1241,7 +1235,6 @@
 # wrong constant name object_id
 # wrong constant name pretty_inspect
 # wrong constant name respond_to?
-# wrong constant name then
 # wrong constant name yield_self
 # wrong constant name at_exit
 # wrong constant name key
@@ -1257,8 +1250,6 @@
 # wrong constant name deprecate_constant
 # wrong constant name undef_method
 # wrong constant name used_modules
-# uninitialized constant Monitor::EXCEPTION_IMMEDIATE
-# uninitialized constant Monitor::EXCEPTION_NEVER
 # wrong constant name enter
 # wrong constant name exit
 # wrong constant name try_enter
@@ -1282,14 +1273,11 @@
 # wrong constant name wait_while
 # wrong constant name extend_object
 # uninitialized constant Mutex_m
+# Did you mean?  Mutex
 # uninitialized constant Mutex_m
+# Did you mean?  Mutex
 # wrong constant name name
 # wrong constant name receiver
-# undefined method `initialize<defaultArg>4' for class `Net::BufferedIO'
-# Did you mean?  initialize_dup
-# wrong constant name initialize<defaultArg>4
-# wrong constant name write_timeout
-# wrong constant name write_timeout=
 # uninitialized constant Net::FTP
 # uninitialized constant Net::FTP
 # uninitialized constant Net::FTPConnectionError
@@ -1316,55 +1304,44 @@
 # wrong constant name max_version=
 # wrong constant name min_version
 # wrong constant name min_version=
-# wrong constant name write_timeout
-# wrong constant name write_timeout=
 # uninitialized constant Net::HTTP::DigestAuth
+# Did you mean?  Digest
 # uninitialized constant Net::HTTP::DigestAuth
+# Did you mean?  Digest
 # uninitialized constant Net::HTTP::Persistent
 # uninitialized constant Net::HTTP::Persistent
 # uninitialized constant Net::HTTPAlreadyReported::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPAlreadyReported::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPAlreadyReported::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPEarlyHints::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPEarlyHints::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPGatewayTimeout::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPGatewayTimeout::CODE_TO_OBJ
+# Did you mean?  Net::HTTPAlreadyReported::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::HTTPLoopDetected::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPLoopDetected::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPLoopDetected::CODE_TO_OBJ
+# Did you mean?  Net::HTTPLoopDetected::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::HTTPMisdirectedRequest::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPMisdirectedRequest::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPMisdirectedRequest::CODE_TO_OBJ
+# Did you mean?  Net::HTTPMisdirectedRequest::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::HTTPNotExtended::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPNotExtended::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPNotExtended::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPPayloadTooLarge::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPPayloadTooLarge::CODE_TO_OBJ
+# Did you mean?  Net::HTTPNotExtended::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::HTTPProcessing::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPProcessing::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPProcessing::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPRangeNotSatisfiable::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPRangeNotSatisfiable::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPRequestTimeout::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPRequestTimeout::CODE_TO_OBJ
-# wrong constant name <static-init>
-# uninitialized constant Net::HTTPURITooLong::CODE_CLASS_TO_OBJ
-# uninitialized constant Net::HTTPURITooLong::CODE_TO_OBJ
+# Did you mean?  Net::HTTPProcessing::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::HTTPVariantAlsoNegotiates::CODE_CLASS_TO_OBJ
+# Did you mean?  Net::HTTPVariantAlsoNegotiates::CODE_CLASS_TO_OBJ
 # uninitialized constant Net::HTTPVariantAlsoNegotiates::CODE_TO_OBJ
+# Did you mean?  Net::HTTPVariantAlsoNegotiates::CODE_TO_OBJ
 # wrong constant name <static-init>
 # uninitialized constant Net::IMAP
 # uninitialized constant Net::IMAP
-# undefined method `initialize<defaultArg>1' for class `Net::ReadTimeout'
-# Did you mean?  initialize_dup
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name io
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTP
 # uninitialized constant Net::SMTPAuthenticationError
@@ -1382,23 +1359,20 @@
 # uninitialized constant Net::SMTPServerBusy
 # uninitialized constant Net::SMTPServerBusy
 # uninitialized constant Net::SMTPSyntaxError
-# Did you mean?  Net::ProtoSyntaxError
+# Did you mean?  SyntaxError
+#                Net::ProtoSyntaxError
 # uninitialized constant Net::SMTPSyntaxError
-# Did you mean?  Net::ProtoSyntaxError
+# Did you mean?  SyntaxError
+#                Net::ProtoSyntaxError
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnsupportedCommand
 # uninitialized constant Net::SMTPUnsupportedCommand
-# undefined method `initialize<defaultArg>1' for class `Net::WriteTimeout'
-# Did you mean?  initialize_dup
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name io
-# wrong constant name <static-init>
 # wrong constant name to_i
 # wrong constant name args
 # wrong constant name private_call?
 # uninitialized constant RUBYGEMS_ACTIVATION_MONITOR
+# Did you mean?  RUBYGEMS_ACTIVATION_MONITOR
 # wrong constant name <Class:Object>
 # wrong constant name []
 # wrong constant name []=
@@ -1415,53 +1389,8 @@
 # wrong constant name define_finalizer
 # wrong constant name garbage_collect
 # wrong constant name undefine_finalizer
-# wrong constant name indefinite_length
-# wrong constant name indefinite_length=
-# wrong constant name +@
-# wrong constant name -@
-# wrong constant name /
-# wrong constant name negative?
-# uninitialized constant OpenSSL::Digest::DSS
-# uninitialized constant OpenSSL::Digest::DSS
-# uninitialized constant OpenSSL::Digest::DSS1
-# uninitialized constant OpenSSL::Digest::DSS1
-# uninitialized constant OpenSSL::Digest::SHA
-# Did you mean?  OpenSSL::Digest::SHA1
-# uninitialized constant OpenSSL::Digest::SHA
-# Did you mean?  OpenSSL::Digest::SHA1
-# wrong constant name <Class:KDFError>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name hkdf
-# wrong constant name pbkdf2_hmac
-# wrong constant name scrypt
-# wrong constant name signed?
 # uninitialized constant OpenSSL::PKCS5::PKCS5Error
 # uninitialized constant OpenSSL::PKCS5::PKCS5Error
-# undefined method `to_bn<defaultArg>1' for class `OpenSSL::PKey::EC::Point'
-# wrong constant name to_bn<defaultArg>1
-# wrong constant name to_octet_string
-# wrong constant name sign_pss
-# wrong constant name verify_pss
-# wrong constant name add_certificate
-# wrong constant name alpn_protocols
-# wrong constant name alpn_protocols=
-# wrong constant name alpn_select_cb
-# wrong constant name alpn_select_cb=
-# wrong constant name enable_fallback_scsv
-# wrong constant name max_version=
-# wrong constant name min_version=
-# uninitialized constant OpenSSL::SSL::SSLSocket::BLOCK_SIZE
-# wrong constant name alpn_protocol
-# wrong constant name tmp_key
-# wrong constant name ==
-# wrong constant name ==
-# wrong constant name ==
-# wrong constant name to_utf8
-# wrong constant name ==
-# wrong constant name ==
-# wrong constant name to_der
-# wrong constant name fips_mode
 # uninitialized constant Opus
 # uninitialized constant Opus
 # undefined method `children<defaultArg>1' for class `Pathname'
@@ -1474,33 +1403,53 @@
 # wrong constant name fnmatch?
 # wrong constant name glob
 # wrong constant name make_symlink
-# wrong constant name <<
 # wrong constant name ===
-# wrong constant name >>
 # wrong constant name clone
 # wrong constant name yield
 # uninitialized constant Proc0
+# Did you mean?  Proc
 # uninitialized constant Proc0
+# Did you mean?  Proc
 # uninitialized constant Proc1
+# Did you mean?  Proc
 # uninitialized constant Proc1
+# Did you mean?  Proc
 # uninitialized constant Proc10
+# Did you mean?  Proc
 # uninitialized constant Proc10
+# Did you mean?  Proc
 # uninitialized constant Proc2
+# Did you mean?  Proc
 # uninitialized constant Proc2
+# Did you mean?  Proc
 # uninitialized constant Proc3
+# Did you mean?  Proc
 # uninitialized constant Proc3
+# Did you mean?  Proc
 # uninitialized constant Proc4
+# Did you mean?  Proc
 # uninitialized constant Proc4
+# Did you mean?  Proc
 # uninitialized constant Proc5
+# Did you mean?  Proc
 # uninitialized constant Proc5
+# Did you mean?  Proc
 # uninitialized constant Proc6
+# Did you mean?  Proc
 # uninitialized constant Proc6
+# Did you mean?  Proc
 # uninitialized constant Proc7
+# Did you mean?  Proc
 # uninitialized constant Proc7
+# Did you mean?  Proc
 # uninitialized constant Proc8
+# Did you mean?  Proc
 # uninitialized constant Proc8
+# Did you mean?  Proc
 # uninitialized constant Proc9
+# Did you mean?  Proc
 # uninitialized constant Proc9
+# Did you mean?  Proc
 # wrong constant name getegid
 # wrong constant name cstime
 # wrong constant name cstime=
@@ -1515,27 +1464,39 @@
 # wrong constant name last_status
 # wrong constant name setpgrp
 # uninitialized constant Pry::Command::COLORS
+# Did you mean?  Pry::Command::COLORS
 # uninitialized constant Pry::Command::GemSearch::COLORS
-# Did you mean?  Pry::Command::COLORS
+# Did you mean?  Pry::Command::GemSearch::COLORS
+#                Pry::Command::COLORS
 # uninitialized constant Pry::Command::GemSearch::VOID_VALUE
-# Did you mean?  Pry::Command::VOID_VALUE
+# Did you mean?  Pry::Command::GemSearch::VOID_VALUE
+#                Pry::Command::VOID_VALUE
 # uninitialized constant Pry::Command::GemStat::COLORS
-# Did you mean?  Pry::Command::COLORS
+# Did you mean?  Pry::Command::GemStat::COLORS
+#                Pry::Command::COLORS
 # uninitialized constant Pry::Command::GemStat::VOID_VALUE
-# Did you mean?  Pry::Command::VOID_VALUE
+# Did you mean?  Pry::Command::GemStat::VOID_VALUE
+#                Pry::Command::VOID_VALUE
 # uninitialized constant Pry::Command::Ls::COLORS
-# Did you mean?  Pry::Command::COLORS
+# Did you mean?  Pry::Command::Ls::COLORS
+#                Pry::Command::COLORS
 # uninitialized constant Pry::Command::Ls::VOID_VALUE
-# Did you mean?  Pry::Command::VOID_VALUE
+# Did you mean?  Pry::Command::Ls::VOID_VALUE
+#                Pry::Command::VOID_VALUE
 # wrong constant name call
 # wrong constant name initialize
 # wrong constant name relative_file_name
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Core::ExampleGroup::BE_PREDICATE_REGEX
+# Did you mean?  RSpec::Core::ExampleGroup::BE_PREDICATE_REGEX
 # uninitialized constant RSpec::Core::ExampleGroup::DYNAMIC_MATCHER_REGEX
+# Did you mean?  RSpec::Core::ExampleGroup::DYNAMIC_MATCHER_REGEX
 # uninitialized constant RSpec::Core::ExampleGroup::HAS_REGEX
+# Did you mean?  RSpec::Core::ExampleGroup::HAS_REGEX
 # uninitialized constant RSpec::Core::ExampleGroup::NOT_YET_IMPLEMENTED
+# Did you mean?  RSpec::Core::ExampleGroup::NOT_YET_IMPLEMENTED
 # uninitialized constant RSpec::Core::ExampleGroup::NO_REASON_GIVEN
+# Did you mean?  RSpec::Core::ExampleGroup::NO_REASON_GIVEN
 # wrong constant name initialize
 # wrong constant name persist
 # wrong constant name <static-init>
@@ -1692,6 +1653,7 @@
 # wrong constant name other_errors
 # wrong constant name summary
 # uninitialized constant RSpec::Matchers::BuiltIn::All::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::All::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name failed_objects
 # wrong constant name initialize
@@ -1705,33 +1667,43 @@
 # wrong constant name >
 # wrong constant name >=
 # uninitialized constant RSpec::Matchers::BuiltIn::Be::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Be::UNDEFINED
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeAKindOf::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeAKindOf::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeAnInstanceOf::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeAnInstanceOf::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeBetween::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeBetween::UNDEFINED
 # wrong constant name exclusive
 # wrong constant name inclusive
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeComparedTo::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeComparedTo::UNDEFINED
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeFalsey::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeFalsey::UNDEFINED
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeNil::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeNil::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BePredicate::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BePredicate::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeTruthy::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeTruthy::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::BeWithin::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::BeWithin::UNDEFINED
 # wrong constant name initialize
 # wrong constant name of
 # wrong constant name percent_of
@@ -1741,6 +1713,7 @@
 # undefined method `initialize<defaultArg>2' for class `RSpec::Matchers::BuiltIn::Change'
 # Did you mean?  initialize_dup
 # uninitialized constant RSpec::Matchers::BuiltIn::Change::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Change::UNDEFINED
 # wrong constant name by
 # wrong constant name by_at_least
 # wrong constant name by_at_most
@@ -1757,6 +1730,7 @@
 # wrong constant name <Class:Or>
 # wrong constant name <Class:SequentialEvaluator>
 # uninitialized constant RSpec::Matchers::BuiltIn::Compound::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Compound::UNDEFINED
 # wrong constant name diffable_matcher_list
 # wrong constant name does_not_match?
 # wrong constant name evaluator
@@ -1764,14 +1738,16 @@
 # wrong constant name matcher_1
 # wrong constant name matcher_2
 # uninitialized constant RSpec::Matchers::BuiltIn::Compound::And::UNDEFINED
-# Did you mean?  RSpec::Matchers::BuiltIn::Compound::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Compound::And::UNDEFINED
+#                RSpec::Matchers::BuiltIn::Compound::UNDEFINED
 # wrong constant name <static-init>
 # wrong constant name initialize
 # wrong constant name matcher_matches?
 # wrong constant name <static-init>
 # wrong constant name matcher_expects_call_stack_jump?
 # uninitialized constant RSpec::Matchers::BuiltIn::Compound::Or::UNDEFINED
-# Did you mean?  RSpec::Matchers::BuiltIn::Compound::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Compound::Or::UNDEFINED
+#                RSpec::Matchers::BuiltIn::Compound::UNDEFINED
 # wrong constant name <static-init>
 # wrong constant name initialize
 # wrong constant name matcher_matches?
@@ -1779,6 +1755,7 @@
 # wrong constant name <static-init>
 # wrong constant name <Class:PairingsMaximizer>
 # uninitialized constant RSpec::Matchers::BuiltIn::ContainExactly::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::ContainExactly::UNDEFINED
 # wrong constant name <Class:NullSolution>
 # wrong constant name <Class:Solution>
 # wrong constant name actual_to_expected_matched_indexes
@@ -1789,7 +1766,7 @@
 # wrong constant name <static-init>
 # wrong constant name worse_than?
 # wrong constant name +
-# uninitialized constant #<Class:0x00007fb627f0c028>::Elem
+# uninitialized constant #<Class:0x00007ffe7de38ea0>::Elem
 # wrong constant name candidate?
 # wrong constant name ideal?
 # wrong constant name indeterminate_actual_indexes
@@ -1808,20 +1785,26 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Cover::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Cover::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::EndWith::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::EndWith::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Eq::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Eq::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Eql::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Eql::UNDEFINED
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Equal::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Equal::UNDEFINED
 # wrong constant name <static-init>
 # wrong constant name <Class:ExistenceTest>
 # uninitialized constant RSpec::Matchers::BuiltIn::Exist::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Exist::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name actual_exists?
@@ -1830,21 +1813,25 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Has::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Has::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::HaveAttributes::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::HaveAttributes::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name respond_to_failed
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Include::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Include::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name expecteds
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::Match::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Match::UNDEFINED
 # wrong constant name initialize
 # wrong constant name with_captures
 # wrong constant name <static-init>
@@ -1869,6 +1856,7 @@
 # wrong constant name unregister
 # wrong constant name use_custom_matcher_or_delegate
 # uninitialized constant RSpec::Matchers::BuiltIn::Output::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Output::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
@@ -1898,6 +1886,7 @@
 # wrong constant name with_message
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::RespondTo::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::RespondTo::UNDEFINED
 # wrong constant name and_any_keywords
 # wrong constant name and_keywords
 # wrong constant name and_unlimited_arguments
@@ -1913,14 +1902,17 @@
 # undefined method `initialize<defaultArg>1' for class `RSpec::Matchers::BuiltIn::Satisfy'
 # Did you mean?  initialize_dup
 # uninitialized constant RSpec::Matchers::BuiltIn::Satisfy::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::Satisfy::UNDEFINED
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::StartOrEndWith::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::StartOrEndWith::UNDEFINED
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::StartWith::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::StartWith::UNDEFINED
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `RSpec::Matchers::BuiltIn::ThrowSymbol'
 # Did you mean?  initialize_dup
@@ -1938,6 +1930,7 @@
 # wrong constant name supports_block_expectations?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::YieldControl::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::YieldControl::UNDEFINED
 # wrong constant name at_least
 # wrong constant name at_most
 # wrong constant name does_not_match?
@@ -1950,16 +1943,19 @@
 # wrong constant name twice
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::YieldSuccessiveArgs::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::YieldSuccessiveArgs::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::YieldWithArgs::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::YieldWithArgs::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name initialize
 # wrong constant name matches?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Matchers::BuiltIn::YieldWithNoArgs::UNDEFINED
+# Did you mean?  RSpec::Matchers::BuiltIn::YieldWithNoArgs::UNDEFINED
 # wrong constant name does_not_match?
 # wrong constant name matches?
 # wrong constant name <static-init>
@@ -2011,8 +2007,10 @@
 # wrong constant name raise_second_instance_received_message_error
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Mocks::AnyInstance::ExpectChainChain::EmptyInvocationOrder
-# Did you mean?  RSpec::Mocks::AnyInstance::ExpectChainChain::InvocationOrder
+# Did you mean?  RSpec::Mocks::AnyInstance::ExpectChainChain::EmptyInvocationOrder
+#                RSpec::Mocks::AnyInstance::ExpectChainChain::InvocationOrder
 # uninitialized constant RSpec::Mocks::AnyInstance::ExpectChainChain::InvocationOrder
+# Did you mean?  RSpec::Mocks::AnyInstance::ExpectChainChain::InvocationOrder
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name expectation_fulfilled?
@@ -2063,8 +2061,10 @@
 # wrong constant name expectation_fulfilled?
 # wrong constant name <static-init>
 # uninitialized constant RSpec::Mocks::AnyInstance::StubChainChain::EmptyInvocationOrder
-# Did you mean?  RSpec::Mocks::AnyInstance::StubChainChain::InvocationOrder
+# Did you mean?  RSpec::Mocks::AnyInstance::StubChainChain::EmptyInvocationOrder
+#                RSpec::Mocks::AnyInstance::StubChainChain::InvocationOrder
 # uninitialized constant RSpec::Mocks::AnyInstance::StubChainChain::InvocationOrder
+# Did you mean?  RSpec::Mocks::AnyInstance::StubChainChain::InvocationOrder
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -2181,25 +2181,38 @@
 # uninitialized constant Racc
 # uninitialized constant Racc
 # uninitialized constant Rake::DSL::DEFAULT
+# Did you mean?  Rake::DSL::DEFAULT
 # uninitialized constant Rake::DSL::LN_SUPPORTED
+# Did you mean?  Rake::DSL::LN_SUPPORTED
 # uninitialized constant Rake::DSL::LOW_METHODS
 # Did you mean?  Rake::DSL::LowMethods
+#                Rake::DSL::LOW_METHODS
 # uninitialized constant Rake::DSL::METHODS
 # Did you mean?  Method
+#                Rake::DSL::METHODS
 # uninitialized constant Rake::DSL::OPT_TABLE
+# Did you mean?  Rake::DSL::OPT_TABLE
 # uninitialized constant Rake::DSL::RUBY
+# Did you mean?  Rake::DSL::RUBY
 # uninitialized constant Rake::DSL::VERSION
 # Did you mean?  Rake::Version
+#                Rake::DSL::VERSION
 #                Rake::VERSION
 # uninitialized constant Rake::FileUtilsExt::LN_SUPPORTED
+# Did you mean?  Rake::FileUtilsExt::LN_SUPPORTED
 # uninitialized constant Rake::FileUtilsExt::LOW_METHODS
 # Did you mean?  Rake::FileUtilsExt::LowMethods
+#                Rake::FileUtilsExt::LOW_METHODS
 # uninitialized constant Rake::FileUtilsExt::METHODS
 # Did you mean?  Method
+#                Rake::FileUtilsExt::METHODS
 # uninitialized constant Rake::FileUtilsExt::OPT_TABLE
+# Did you mean?  Rake::FileUtilsExt::OPT_TABLE
 # uninitialized constant Rake::FileUtilsExt::RUBY
+# Did you mean?  Rake::FileUtilsExt::RUBY
 # uninitialized constant Rake::FileUtilsExt::VERSION
 # Did you mean?  Rake::Version
+#                Rake::FileUtilsExt::VERSION
 #                Rake::VERSION
 # undefined method `alphanumeric<defaultArg>1' for module `Random::Formatter'
 # undefined method `random_bytes<defaultArg>1' for module `Random::Formatter'
@@ -2210,39 +2223,14 @@
 # wrong constant name random_bytes<defaultArg>1
 # wrong constant name urlsafe_base64<defaultArg>1
 # wrong constant name urlsafe_base64<defaultArg>2
-# wrong constant name bytes
 # wrong constant name urandom
-# wrong constant name %
-# wrong constant name entries
-# wrong constant name to_a
 # undefined singleton method `expand<defaultArg>1' for `RbConfig'
-# undefined singleton method `fire_update!<defaultArg>1' for `RbConfig'
-# undefined singleton method `fire_update!<defaultArg>2' for `RbConfig'
 # wrong constant name expand<defaultArg>1
 # wrong constant name expand
-# wrong constant name fire_update!<defaultArg>1
-# wrong constant name fire_update!<defaultArg>2
-# wrong constant name fire_update!
 # wrong constant name ruby
 # wrong constant name match?
 # uninitialized constant Ripper
 # uninitialized constant Ripper
-# wrong constant name <Class:Node>
-# undefined method `pretty_print_children<defaultArg>1' for class `RubyVM::AbstractSyntaxTree::Node'
-# Did you mean?  pretty_print_inspect
-# wrong constant name children
-# wrong constant name first_column
-# wrong constant name first_lineno
-# wrong constant name last_column
-# wrong constant name last_lineno
-# wrong constant name pretty_print_children<defaultArg>1
-# wrong constant name pretty_print_children
-# wrong constant name type
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name of
-# wrong constant name parse
-# wrong constant name parse_file
 # wrong constant name absolute_path
 # wrong constant name base_label
 # wrong constant name disasm
@@ -2264,11 +2252,6 @@
 # wrong constant name load_from_binary
 # wrong constant name load_from_binary_extra_data
 # wrong constant name of
-# wrong constant name <static-init>
-# wrong constant name enabled?
-# wrong constant name pause
-# wrong constant name resume
-# wrong constant name resolve_feature_path
 # wrong constant name stat
 # undefined method `flatten_merge<defaultArg>1' for class `Set'
 # undefined method `initialize<defaultArg>1' for class `Set'
@@ -2314,54 +2297,85 @@
 # wrong constant name clone
 # wrong constant name __init__
 # uninitialized constant Socket::APPEND
+# Did you mean?  Socket::APPEND
 # uninitialized constant Socket::BINARY
+# Did you mean?  Socket::BINARY
 # uninitialized constant Socket::CREAT
+# Did you mean?  Socket::CREAT
 # uninitialized constant Socket::DSYNC
-# Did you mean?  Socket::SYNC
+# Did you mean?  Socket::DSYNC
+#                Socket::SYNC
 # uninitialized constant Socket::EXCL
+# Did you mean?  Socket::EXCL
 # uninitialized constant Socket::FNM_CASEFOLD
+# Did you mean?  Socket::FNM_CASEFOLD
 # uninitialized constant Socket::FNM_DOTMATCH
+# Did you mean?  Socket::FNM_DOTMATCH
 # uninitialized constant Socket::FNM_EXTGLOB
+# Did you mean?  Socket::FNM_EXTGLOB
 # uninitialized constant Socket::FNM_NOESCAPE
+# Did you mean?  Socket::FNM_NOESCAPE
 # uninitialized constant Socket::FNM_PATHNAME
+# Did you mean?  Socket::FNM_PATHNAME
 # uninitialized constant Socket::FNM_SHORTNAME
+# Did you mean?  Socket::FNM_SHORTNAME
 # uninitialized constant Socket::FNM_SYSCASE
+# Did you mean?  Socket::FNM_SYSCASE
 # uninitialized constant Socket::LOCK_EX
 # Did you mean?  Socket::LOCK_NB
 #                Socket::LOCK_UN
+#                Socket::LOCK_EX
 #                Socket::LOCK_SH
 # uninitialized constant Socket::LOCK_NB
-# Did you mean?  Socket::LOCK_UN
+# Did you mean?  Socket::LOCK_NB
+#                Socket::LOCK_UN
 #                Socket::LOCK_EX
 #                Socket::LOCK_SH
 # uninitialized constant Socket::LOCK_SH
 # Did you mean?  Socket::LOCK_NB
 #                Socket::LOCK_UN
 #                Socket::LOCK_EX
+#                Socket::LOCK_SH
 # uninitialized constant Socket::LOCK_UN
 # Did you mean?  Socket::LOCK_NB
+#                Socket::LOCK_UN
 #                Socket::LOCK_EX
 #                Socket::LOCK_SH
 # uninitialized constant Socket::NOCTTY
+# Did you mean?  Socket::NOCTTY
 # uninitialized constant Socket::NOFOLLOW
+# Did you mean?  Socket::NOFOLLOW
 # uninitialized constant Socket::NONBLOCK
+# Did you mean?  Socket::NONBLOCK
 # uninitialized constant Socket::NULL
+# Did you mean?  Socket::NULL
 # uninitialized constant Socket::RDONLY
 # Did you mean?  Socket::WRONLY
+#                Socket::RDONLY
 # uninitialized constant Socket::RDWR
+# Did you mean?  Socket::RDWR
 # uninitialized constant Socket::SEEK_CUR
+# Did you mean?  Socket::SEEK_CUR
 # uninitialized constant Socket::SEEK_DATA
 # Did you mean?  Socket::SEEK_SET
+#                Socket::SEEK_DATA
 # uninitialized constant Socket::SEEK_END
+# Did you mean?  Socket::SEEK_END
 # uninitialized constant Socket::SEEK_HOLE
+# Did you mean?  Socket::SEEK_HOLE
 # uninitialized constant Socket::SEEK_SET
+# Did you mean?  Socket::SEEK_SET
 # uninitialized constant Socket::SHARE_DELETE
+# Did you mean?  Socket::SHARE_DELETE
 # uninitialized constant Socket::SYNC
 # Did you mean?  Socket::DSYNC
+#                Socket::SYNC
 # uninitialized constant Socket::TRUNC
-# Did you mean?  TRUE
+# Did you mean?  Socket::TRUNC
+#                TRUE
 # uninitialized constant Socket::WRONLY
-# Did you mean?  Socket::RDONLY
+# Did you mean?  Socket::WRONLY
+#                Socket::RDONLY
 # wrong constant name <Class:ConstantEntry>
 # wrong constant name all_module_aliases
 # wrong constant name all_module_names
@@ -2537,6 +2551,7 @@
 # wrong constant name main
 # wrong constant name output_file
 # uninitialized constant SortedSet::InspectKey
+# Did you mean?  SortedSet::InspectKey
 # wrong constant name initialize
 # wrong constant name setup
 # wrong constant name result
@@ -2604,7 +2619,6 @@
 # wrong constant name []=
 # wrong constant name dig
 # wrong constant name each_pair
-# wrong constant name filter
 # wrong constant name length
 # wrong constant name members
 # wrong constant name select
@@ -2637,16 +2651,7 @@
 # wrong constant name call
 # wrong constant name initialize
 # wrong constant name <static-init>
-# undefined method `enable<defaultArg>1' for class `TracePoint'
-# undefined method `enable<defaultArg>2' for class `TracePoint'
-# wrong constant name __enable
-# wrong constant name enable<defaultArg>1
-# wrong constant name enable<defaultArg>2
-# wrong constant name eval_script
 # wrong constant name event
-# wrong constant name instruction_sequence
-# wrong constant name parameters
-# wrong constant name <Class:File>
 # wrong constant name decode
 # wrong constant name encode
 # wrong constant name escape
@@ -2659,71 +2664,6 @@
 # wrong constant name new2<defaultArg>1
 # wrong constant name new2<defaultArg>2
 # wrong constant name new2
-# uninitialized constant URI::File::ABS_PATH
-# Did you mean?  URI::ABS_PATH
-# uninitialized constant URI::File::ABS_URI
-# Did you mean?  URI::ABS_URI
-# uninitialized constant URI::File::ABS_URI_REF
-# Did you mean?  URI::ABS_URI_REF
-# uninitialized constant URI::File::DEFAULT_PARSER
-# Did you mean?  URI::File::DEFAULT_PORT
-#                URI::DEFAULT_PARSER
-# uninitialized constant URI::File::ESCAPED
-# Did you mean?  URI::File::Escape
-#                URI::Escape
-#                URI::ESCAPED
-# uninitialized constant URI::File::FRAGMENT
-# Did you mean?  URI::FRAGMENT
-# uninitialized constant URI::File::HOST
-# Did you mean?  URI::HOST
-# uninitialized constant URI::File::OPAQUE
-# Did you mean?  URI::OPAQUE
-# uninitialized constant URI::File::PORT
-# Did you mean?  URI::PORT
-# uninitialized constant URI::File::QUERY
-# Did you mean?  URI::QUERY
-# uninitialized constant URI::File::REGISTRY
-# Did you mean?  URI::REGISTRY
-# uninitialized constant URI::File::REL_PATH
-# Did you mean?  URI::REL_PATH
-# uninitialized constant URI::File::REL_URI
-# Did you mean?  URI::REL_URI
-# uninitialized constant URI::File::REL_URI_REF
-# Did you mean?  URI::REL_URI_REF
-# uninitialized constant URI::File::RFC3986_PARSER
-# Did you mean?  URI::File::RFC3986_Parser
-#                URI::RFC3986_Parser
-#                URI::RFC2396_Parser
-#                URI::File::RFC2396_Parser
-#                URI::RFC3986_PARSER
-# uninitialized constant URI::File::SCHEME
-# Did you mean?  URI::SCHEME
-# uninitialized constant URI::File::TBLDECWWWCOMP_
-# Did you mean?  URI::File::TBLENCWWWCOMP_
-#                URI::TBLDECWWWCOMP_
-#                URI::TBLENCWWWCOMP_
-# uninitialized constant URI::File::TBLENCWWWCOMP_
-# Did you mean?  URI::File::TBLDECWWWCOMP_
-#                URI::TBLDECWWWCOMP_
-#                URI::TBLENCWWWCOMP_
-# uninitialized constant URI::File::UNSAFE
-# Did you mean?  URI::UNSAFE
-# uninitialized constant URI::File::URI_REF
-# Did you mean?  URI::URI_REF
-# uninitialized constant URI::File::USERINFO
-# Did you mean?  URI::USERINFO
-# uninitialized constant URI::File::USE_REGISTRY
-# uninitialized constant URI::File::VERSION
-# Did you mean?  URI::VERSION
-# uninitialized constant URI::File::VERSION_CODE
-# Did you mean?  URI::VERSION_CODE
-# uninitialized constant URI::File::WEB_ENCODINGS_
-# Did you mean?  URI::WEB_ENCODINGS_
-# wrong constant name check_password
-# wrong constant name check_user
-# wrong constant name check_userinfo
-# wrong constant name set_userinfo
-# wrong constant name <static-init>
 # wrong constant name attributes
 # wrong constant name attributes=
 # wrong constant name dn
