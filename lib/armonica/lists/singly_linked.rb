@@ -28,7 +28,7 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
 
   sig { params(value: T.nilable(BasicObject)).void }
   def prepend(value)
-    new_root = T.let(Armonica::Lists::Element.new(value), Armonica::Lists::Element)
+    new_root = Armonica::Lists::Element.new(value)
     new_root.assign_next(T.must(root)) unless root.nil?
     assign_root(new_root)
   end
@@ -48,9 +48,31 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
     end
   end
 
+  sig { params(list: Armonica::Lists::SinglyLinked).void }
+  def extend(list) # rubocop:disable Metrics/AbcSize
+    extention_head = T.let(list.root, T.nilable(Armonica::Lists::Element))
+    return if extention_head.nil?
+    last_element = T.let(root, T.nilable(Armonica::Lists::Element))
+
+    if last_element.nil?
+      last_element = Armonica::Lists::Element.new(extention_head.value)
+      assign_root(last_element)
+      extention_head = extention_head.next
+    else
+      last_element = last_element.next until last_element.next.nil?
+    end
+
+    until extention_head.nil?
+      new_element = Armonica::Lists::Element.new(extention_head.value)
+      last_element.assign_next(new_element)
+      last_element = new_element
+      extention_head = extention_head.next
+    end
+  end
+
   sig { returns(Integer) }
   def count
-    initial_count = T.let(0, Integer)
+    initial_count = 0
     current_element = T.let(root, T.nilable(Armonica::Lists::Element))
 
     unless current_element.nil?
