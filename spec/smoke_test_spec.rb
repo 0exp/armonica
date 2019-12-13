@@ -34,6 +34,9 @@ RSpec.describe 'Smoke test' do
     list.extend(extention)
     expect(list.count).to eq(9)
 
+    extention.append(10)
+    expect(list.count).to eq(9)
+
     expect(Armonica::VERSION).to eq('0.1.0')
   end
 end
