@@ -34,21 +34,6 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
   end
 
   sig { params(list: Armonica::Lists::SinglyLinked).void }
-  def link(list)
-    extention_head = T.let(list.root, T.nilable(Armonica::Lists::Element))
-    return nil if extention_head.nil?
-    last_element = T.let(root, T.nilable(Armonica::Lists::Element))
-
-    case
-    when last_element.nil?
-      assign_root(extention_head)
-    else
-      last_element = last_element.next until last_element.next.nil?
-      last_element.assign_next(extention_head)
-    end
-  end
-
-  sig { params(list: Armonica::Lists::SinglyLinked).void }
   def extend(list) # rubocop:disable Metrics/AbcSize
     extention_head = T.let(list.root, T.nilable(Armonica::Lists::Element))
     return if extention_head.nil?
