@@ -22,7 +22,7 @@ require 'armonica'
 
 ## Realized Data Structures
 
-- [Singly Linked List](#singly-linked-list)
+- [Singly Linked List](#singly-linked-list) `Armonica::Lists::SinglyLinked`
 
 ---
 
