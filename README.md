@@ -31,6 +31,8 @@ require 'armonica'
 - `#append(value)`
 - `#prepend(value)`
 - `#extend(list)`
+- `#head`
+- `#tail`
 - `#count`
 
 ---

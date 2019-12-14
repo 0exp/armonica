@@ -55,6 +55,19 @@ class Armonica::Lists::SinglyLinked < Armonica::Lists::Abstract
     end
   end
 
+  sig { returns(BasicObject) }
+  def head
+    T.must(root).value unless root.nil?
+  end
+
+  sig { returns(BasicObject) }
+  def tail
+    last_element = T.let(root, T.nilable(Armonica::Lists::Element))
+    return nil if last_element.nil?
+    last_element = last_element.next until last_element.next.nil?
+    last_element.value
+  end
+
   sig { returns(Integer) }
   def count
     initial_count = 0
