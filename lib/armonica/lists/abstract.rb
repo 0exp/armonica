@@ -7,7 +7,7 @@ class Armonica::Lists::Abstract
 
   abstract!
 
-  sig { returns(Armonica::Lists::Lock) }
+  sig(:final) { returns(Armonica::Lists::Lock) }
   attr_reader :lock
 
   sig { void }
