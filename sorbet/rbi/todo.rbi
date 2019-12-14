@@ -4,6 +4,7 @@
 # typed: strong
 module T::InterfaceWrapper::Helpers; end
 module T::Private::Abstract::Hooks; end
+module T::Private::Final::NoInherit; end
 module T::Private::Methods::MethodHooks; end
 module T::Private::Methods::MethodHooks; end
 module T::Private::Methods::MethodHooks; end
