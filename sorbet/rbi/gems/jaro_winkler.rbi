@@ -5,11 +5,11 @@
 #
 # If you would like to make changes to this file, great! Please create the gem's shim here:
 #
-#   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/rspec/all/rspec.rbi
+#   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/jaro_winkler/all/jaro_winkler.rbi
 #
-# rspec-3.9.0
+# jaro_winkler-1.5.4
 
-module RSpec
-end
-module RSpec::Version
+module JaroWinkler
+  def self.distance(*arg0); end
+  def self.jaro_distance(*arg0); end
 end

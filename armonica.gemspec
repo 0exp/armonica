@@ -5,7 +5,7 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 2.4.9'
+  spec.required_ruby_version = '>= 2.4.10'
 
   spec.name    = 'armonica'
   spec.version = '0.1.0'
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sorbet-runtime'
 
   spec.add_development_dependency 'sorbet'
-  spec.add_development_dependency 'armitage-rubocop', '~> 0.77'
+  spec.add_development_dependency 'armitage-rubocop', '~> 0.81'
   spec.add_development_dependency 'rspec',            '~> 3.9'
   spec.add_development_dependency 'simplecov'
 

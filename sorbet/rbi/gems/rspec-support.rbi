@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/rspec-support/all/rspec-support.rbi
 #
-# rspec-support-3.9.0
+# rspec-support-3.9.2
+
 module RSpec
   extend RSpec::Support::Warnings
 end
@@ -77,8 +78,10 @@ module RSpec::Support::RubyFeatures
   def self.ripper_supported?; end
   def self.supports_exception_cause?; end
   def self.supports_rebinding_module_methods?; end
+  def self.supports_taint?; end
   def supports_exception_cause?; end
   def supports_rebinding_module_methods?; end
+  def supports_taint?; end
 end
 module RSpec::Support::AllExceptionsExceptOnesWeMustNotRescue
   def self.===(exception); end
@@ -128,11 +131,6 @@ module RSpec::Support::RecursiveConstMethods
   def normalize_const_name(const_name); end
   def recursive_const_defined?(const_name); end
   def recursive_const_get(const_name); end
-end
-module RSpec::Support::FuzzyMatcher
-  def self.arrays_match?(expected_list, actual_list); end
-  def self.hashes_match?(expected_hash, actual_hash); end
-  def self.values_match?(expected, actual); end
 end
 class RSpec::Support::ObjectFormatter
   def format(object); end
@@ -203,6 +201,11 @@ end
 class RSpec::Support::ObjectFormatter::InspectableObjectInspector < RSpec::Support::ObjectFormatter::BaseInspector
   def inspect; end
   def self.can_inspect?(object); end
+end
+module RSpec::Support::FuzzyMatcher
+  def self.arrays_match?(expected_list, actual_list); end
+  def self.hashes_match?(expected_hash, actual_hash); end
+  def self.values_match?(expected, actual); end
 end
 class RSpec::Support::MethodSignature
   def arbitrary_kw_args?; end

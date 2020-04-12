@@ -2,12 +2,10 @@
 #   srb rbi todo
 
 # typed: strong
+module ActiveSupport::StringInquirer; end
+module ActiveSupport::TimeZone; end
 module T::InterfaceWrapper::Helpers; end
 module T::Private::Abstract::Hooks; end
 module T::Private::Final::NoInherit; end
 module T::Private::Methods::MethodHooks; end
-module T::Private::Methods::MethodHooks; end
-module T::Private::Methods::MethodHooks; end
-module T::Private::Methods::SingletonMethodHooks; end
-module T::Private::Methods::SingletonMethodHooks; end
 module T::Private::Methods::SingletonMethodHooks; end

@@ -7,6 +7,5 @@
 /spec/reports/
 /tmp/
 .rspec_status
-Gemfile.lock
 .ruby-version
 *.gem
